@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone Doctor – iPhones</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .phone-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .phone-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .phone-card:hover {
+      transform: scale(1.03);
+    }
+    .phone-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .phone-card h3 {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📱 Phone Doctor</h1>
+  <p>Your Trusted Mobile Repair Partner</p>
+</header>
+
+<div class="phone-grid">
+  <div class="phone-card" onclick="location.href='iphone13.html'">
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg" alt="iPhone 13" />
+    <h3>iPhone 13</h3>
+  </div>
+  <div class="phone-card" onclick="location.href='iphone12.html'">
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg" alt="iPhone 12" />
+    <h3>iPhone 12</h3>
+  </div>
+  <div class="phone-card" onclick="location.href='iphone11.html'">
+    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg" alt="iPhone 11" />
+    <h3>iPhone 11</h3>
+  </div>
+</div>
+
+</body>
+</html>
